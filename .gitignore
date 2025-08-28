@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+telemetry.db
+eval_results.csv
+eval_summary.json
+node_modules/
+.streamlit/

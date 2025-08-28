@@ -1,0 +1,11 @@
+tasks:
+  - id: sum1
+    type: summarization
+    prompt: "Summarize: {text}"
+    input: "Generative AI accelerates analysis and writing."
+    expected_keyphrases: ["analysis","writing"]
+  - id: email1
+    type: writing
+    prompt: "Draft a polite escalation email about a delayed delivery."
+    input: ""
+    expected_keyphrases: ["delay","appreciate","resolve"]

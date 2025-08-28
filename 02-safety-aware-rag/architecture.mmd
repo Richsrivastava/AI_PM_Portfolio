@@ -1,0 +1,9 @@
+flowchart LR
+  U[User] --> UI[Q&A UI]
+  UI --> RAG[Retriever/Reader]
+  RAG --> Index[(Vector/TF-IDF index)]
+  RAG --> LLM
+  RAG --> Guard[Guardrails & Confidence Gate]
+  Guard -->|low confidence| Clarify{{Ask clarifying question}}
+  Guard -->|high confidence| Answer
+  Guard --> Logs[(telemetry.db + evals)]

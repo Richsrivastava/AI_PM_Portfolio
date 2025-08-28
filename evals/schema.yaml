@@ -1,0 +1,7 @@
+tasks:
+  - id: ex1
+    type: summarization
+    prompt: "Summarize the following text in 3 bullets: <TEXT>"
+    input: "LLMs can draft, summarize, and analyze text."
+    expected_keyphrases: ["draft", "summarize", "analyze"]
+    must_cite: false

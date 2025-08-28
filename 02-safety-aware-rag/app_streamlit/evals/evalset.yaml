@@ -1,0 +1,6 @@
+tasks:
+  - id: reg1
+    type: factual
+    prompt: "According to the docs, what is the deductible for plan X?"
+    input: ""
+    expected_keyphrases: ["deductible"]

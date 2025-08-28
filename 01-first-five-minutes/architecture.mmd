@@ -1,0 +1,6 @@
+flowchart LR
+  U[User] --> UI[Onboarding UI]
+  UI -->|variant A/B/C| Orchestrator
+  Orchestrator --> LLM
+  Orchestrator --> Logs[(telemetry.db)]
+  Orchestrator --> Evals[(evals/)]
